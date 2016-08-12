@@ -8,16 +8,25 @@ If the integer is represented with the letter n, a factorial is the product of a
 Factorials are often represented with the shorthand notation n!
 
 For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
-
-Remember to use Read-Search-Ask if you get stuck. Write your own code.
 */
 
-//Solution
+//Solution (recursive)
 function factorialize(num) {
-  if (num < 2) {
+  if (num === 0) {
     return 1;
   }
-  return num * factorialize(num -1);
+  return num * factorialize(num - 1);
+}
+
+factorialize(5);
+
+//Solution II (iterative)
+function factorialize(num) {
+  var count = 1;
+  for(var i = 1; i <= num; i++) {
+    count *= 1;
+  }
+  return count;
 }
 
 factorialize(5);
