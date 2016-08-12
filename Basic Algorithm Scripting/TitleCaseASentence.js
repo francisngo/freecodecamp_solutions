@@ -31,3 +31,14 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+
+//Solution with map() and replace() method
+//replace() method returns a new string with some or all matches of a pattern replaced by a replacement
+function titleCase(str) {
+  str = str.toLowerCase().split(' ').map(function(word) {
+    return word.replace(word[0], word[0].toUpperCase());
+  });
+  return str.join(' ');
+}
+
+titleCase("I'm a little tea pot");
