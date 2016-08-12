@@ -10,7 +10,7 @@ Factorials are often represented with the shorthand notation n!
 For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 */
 
-//Solution (recursive)
+//Solution with recursion
 function factorialize(num) {
   if (num === 0) {
     return 1;
@@ -20,7 +20,7 @@ function factorialize(num) {
 
 factorialize(5);
 
-//Solution II (iterative)
+//Solution with iteration
 function factorialize(num) {
   var count = 1;
   for(var i = 1; i <= num; i++) {
