@@ -17,8 +17,8 @@ function getIndexToIns(arr, num) {
     if (arr[a] >= num) {
       return parseInt(a); //return index as an integer
     }
-    return arr.length;
   }
+  return arr.length;
 }
 
 getIndexToIns([40, 60], 50);
