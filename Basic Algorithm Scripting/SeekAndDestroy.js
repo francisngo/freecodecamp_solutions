@@ -6,8 +6,7 @@ You will be provided with an initial array (the first argument in the destroyer 
 
 //Solution
 function destroyer(arr) {
-  var args = Array.prototype.slice.call(arguments);
-  args.splice(0, 1);
+  var args = Array.prototype.slice.call(arguments).splice(1);
   return arr.filter(function(element) {
     return args.indexOf(element) === -1;
   });

@@ -12,6 +12,7 @@ Lastly, ["Alien", "line"], should return true because all of the letters in "lin
 
 //Solution
 //indexOf() method returns the index within the calling String object of the first occurence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.
+// if any letter of the test word searched is -1 it means the letter doesn't exist in the word than return false otherwise return true
 function mutation(arr) {
   var test = arr[1].toLowerCase();
   var target = arr[0].toLowerCase();
@@ -19,8 +20,8 @@ function mutation(arr) {
     if (target.indexOf(test[i]) < 0) {
       return false;
     }
-    return true;
   }
+  return true;
 }
 
 mutation(["hello", "hey"]); //should return false
