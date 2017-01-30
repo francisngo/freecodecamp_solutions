@@ -43,7 +43,7 @@ function findLongestWord(str) {
     } else {
       return longest;
     }
-  }, "");
+  });
   return longestWord.length;
 }
 

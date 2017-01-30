@@ -14,3 +14,10 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+
+/*
+Explanation:
+The split() method splits a string object into an array of strings by separating the string into substrings.
+str.split([separator[, limit]]);
+separator (optional): specifies the character(s) to use for separating the string
+limit (optional): integer specifying a limit on the number of splits to be found. 

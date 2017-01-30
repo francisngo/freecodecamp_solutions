@@ -16,6 +16,7 @@ We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and 
 //Solution
 function palindrome(str) {
   var RegEx = /[\W_]/g; // or var RegEx = /[^A-Za-z0-9]/g;
+  // removes punctuation and make string lowercase
   var lowerStr = str.toLowerCase().replace(RegEx, '');
   //toLowerCase() = a man, a plan, a canal. panama
   //replace() = amanaplanacanalpanama

@@ -2,14 +2,12 @@
 Confirm The Ending
 
 Check if a string (first argument, str) ends with the given target string (second argument, target).
-
-This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
 */
 
 //Solution
 //substr() method returns the characters in a string beginning at the specified location through the specificed number of characters
 function confirmEnding(str, target) {
-  return str.substr(-target.length) === target;
+  return target === str.substr(str.length - target.length);
 }
 
 confirmEnding("Bastian", "n");

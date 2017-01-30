@@ -12,7 +12,7 @@ function titleCase(str) {
   // "i'm a little tea pot";
   str = str.split(' ');
   // ["I'm", "a", "little", "tea", "pot"];
-  for (var i = 0; i str.length; i++) {
+  for (var i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
   }
   return str.join(' ');
